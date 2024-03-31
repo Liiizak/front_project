@@ -318,7 +318,7 @@
   margin: auto;
   position: relative;
   min-height: 25px;
-  width: 50%;
+  max-width: 50%;
   display: flex;
 }
 
