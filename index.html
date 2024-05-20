@@ -5,17 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>rudneva elizaveta's portfolio</title>
   <meta name="keywords" content="Руднева Елизавета, ВШПИ, портфолио">
+  <meta name="description" content="сайт хссе энджоера рудневой елизаветы">
+  <meta name="author" content="Руднева Елизавета">
   <link rel="stylesheet" href="fonts/beermoney.css">
   <link rel="stylesheet" href="fonts/roboto.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <div class="background inactive"></div>
+  <div class="popup-container form-popup-container inactive">
+    <div class="form popup-with-text">
+      <label class="form__label" for="tel">Телефон</label>
+      <input class="form__input" type="tel" id="tel" placeholder="89999999999">
+      <label class="form__label" for="email">e-mail</label>
+      <input class="form__input" type="email" id="email" placeholder="somemail@somephystech.edu">
+            <h3 class="warning"></h3>
+      <label class="form__label" for="feedback">Сообщение</label>
+      <textarea class="form__input" id="feedback"></textarea>
+      <input class="form-body__button submit_button" type="submit" id="submit" value="Отправить">
+    </div>
+  </div>
+
+  <div class="popup-container timed-popup-container inactive">
+      <h1 class="popup-title">Тот самый бесячий попап</h1>
+  </div>
+
   <header class="header">
     <img src="images/header.jpg" class="header__photo">
     <h1 class="header__text-header">ABOUT ME</h1>
     <h2 class="header__text-main">Руднева Елизавета</h2>
   </header>
-  <div class="section">
+<div class="menu">
+  <a class="menu__text" href="#education">Education</a>
+  <a class="menu__text" href="#about_me">About me</a>
+  <a class="menu__text" href="#gall">Gallery</a>
+  <a class="menu__text" href="#contact_me">Contact me</a>
+  </div>
+ <a name="education"></a>
+<div class="section">
     <div class="section__text-container">
       <img src="images/Book_Open.svg" class="section__icon">
       <h1 class="section__text-header">Образование</h1>
@@ -24,6 +51,7 @@
       <p class="section__text">2023-now Московский физико-технический институт</p>
     </div>
   </div>
+<div> <a name="about_me"></a> </div>
   <div class="cards-container texture">
     <div class="card">
       <div class="card__photo-container">
@@ -99,7 +127,41 @@
       </div>
     </div>
   </div>
-  <footer class="footer">
+    <a name="gall"></a>
+<div class="gallery">
+  <a class="wrapper"><img class="gallery__image" src="images/photo1.jpg" alt="Изоб. 1" id="0"></a>
+  <a class="wrapper"><img class="gallery__image" src="images/photo2.jpg" alt="Изоб. 2" id="1"></a>
+  <a class="wrapper"><img class="gallery__image" src="images/photo3.jpg" alt="Изоб. 4" id="2"></a>
+  <a class="wrapper"><img class="gallery__image" src="images/photo4.jpg" alt="Изоб. 5" id="3"></a>
+</div>
+
+
+<div id="gallery" class="gallery_popup inactive">
+  <div class="gallery__arrow gallery__arrow_left">
+    <img class="gallery__arrow_left" src="images/arrow-left-normal.svg">
+  </div>
+  <div class="gallery__body">
+    <div class="gallery__content">
+      <div class="gallery__content gallery_content_photo-1 inactive"></div>
+      <div class="gallery__content gallery_content_photo-2 inactive"></div>
+      <div class="gallery__content gallery_content_photo-3 inactive"></div>
+      <div class="gallery__content gallery_content_photo-4 inactive" ></div>
+      <div class="gallery-exit">
+        <p class="close inactive">×</p>
+      </div>
+    </div>
+  </div>
+  <div class="gallery__arrow gallery__arrow_right">
+    <img class="gallery__arrow_right" src="images/arrow-right-normal.svg">
+  </div>
+</div>
+
+  <div class="countdown">
+    <h2 class="countdown__h">До экзамена по плюсам..</h2>
+    <h1 class="countdown__text">
+    </h1>
+  </div>
+  <footer class="footer"> <a name="contact_me"></a>
     <div class="contact-block">
       <h1 class='footer__header'>Contact me!</h1>
       <div class="footer__text-container">
@@ -110,8 +172,11 @@
       <img src="images/Paper_Plane.svg" class="footer__icon">
         <a class="footer__text footer__link" target="_blank" href="https://t.me/mieralli">telegram: @mieralli</a>
     </div>
+      <div class="footer__text-container">
+        <h2 class="footer__text footer__form">Форма обратной связи</h2>
+    </div>
     </div>
   </footer>
 </body>
+<script src="index.js"></script>
 </html>
-

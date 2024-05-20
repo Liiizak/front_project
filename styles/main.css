@@ -1,0 +1,10 @@
+/*
+ * Сглаживание шрифтов для всей страницы, подробнее об этом —
+ * в уроках про адаптацию страницы под различные устройства
+ */
+.beaty {
+  background-image: linear-gradient(rgb(255, 255, 0), rgb(177, 20, 190)),
+  url("images/background-image");
+  width: 500px;
+  height: 500px;
+}
